@@ -1,0 +1,16 @@
+ls -al ---> muestra todo con documentos ocultos
+ls -l ---> muestra documentos
+ls -a ---> muestra documentos ocultos
+cd /c ---> ir a disco C
+cd  ---> ir a home (Change directory)
+pwd ---> Carpeta Actual
+dir ---> lista documentos resumido
+cd ../ ---> sale una carpeta atras
+mkdir Git ---> crea carpeta
+cd Git/ ---> entra a carpeta
+touch vacio.txt ---> crea documento
+cat vacio.txt ---> ver lo que hay en el documento
+history ---> historial de comandos
+!# ---> permite repetir comando dependiendo el cual tenga asignado en el historial
+rm vacio.txt ---> borrar documento
+clear ---> limpiar

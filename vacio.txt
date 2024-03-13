@@ -23,3 +23,5 @@ git add vacio.txt	--->	envia tu archivo a staging donde se guardara temporalment
 git rm --cached vacio.txt	--->	borra el add del archivo para no enviar al repositorio
 git commit -m "Este es el primer commit de este archivo"	-->	lo envia al repositorio
 
+se agrega nueva linea
+

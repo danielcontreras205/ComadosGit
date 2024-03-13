@@ -19,6 +19,7 @@ clear	--->	limpiar
 git init	--->	crea carpeta donde se guarda el registro de cambios y crea un espacio en RAM llamado staging
 git status	--->	Untracked files: no se agregado nada
 		Changes to be committed: hay cambios para enviar pero no se han enviado
+git add .	---> se agrega todo de la carpeta
 git add vacio.txt	--->	envia tu archivo a staging donde se guardara temporalmente entes de ser enviado al repositorio
 git rm --cached vacio.txt	--->	borra el add del archivo para no enviar al repositorio
 git commit -m "Este es el primer commit de este archivo"	-->	lo envia al repositorio

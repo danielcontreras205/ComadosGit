@@ -23,6 +23,6 @@ git add .	---> se agrega todo de la carpeta
 git add vacio.txt	--->	envia tu archivo a staging donde se guardara temporalmente entes de ser enviado al repositorio
 git rm --cached vacio.txt	--->	borra el add del archivo para no enviar al repositorio
 git commit -m "Este es el primer commit de este archivo"	-->	lo envia al repositorio
-
-se agrega nueva linea
+git log vacio.txt	---> ver los commits 
+git show vacio.txt	---> ver los cambios que se hizo
 

@@ -1,16 +1,25 @@
-ls -al ---> muestra todo con documentos ocultos
-ls -l ---> muestra documentos
-ls -a ---> muestra documentos ocultos
-cd /c ---> ir a disco C
-cd  ---> ir a home (Change directory)
-pwd ---> Carpeta Actual
-dir ---> lista documentos resumido
-cd ../ ---> sale una carpeta atras
-mkdir Git ---> crea carpeta
-cd Git/ ---> entra a carpeta
-touch vacio.txt ---> crea documento
-cat vacio.txt ---> ver lo que hay en el documento
-history ---> historial de comandos
-!# ---> permite repetir comando dependiendo el cual tenga asignado en el historial
-rm vacio.txt ---> borrar documento
-clear ---> limpiar
+ls -al 	--->	muestra todo con documentos ocultos
+ls -l  	--->	muestra documentos
+ls -a  	--->	muestra documentos ocultos
+cd /c  	--->	ir a disco C
+cd   	--->	ir a home (Change directory)
+pwd  	--->	Carpeta Actual
+dir  	--->	lista documentos resumido
+cd ../	--->	sale una carpeta atras
+mkdir Git	--->	crea carpeta
+cd Git/	--->	entra a carpeta
+touch vacio.txt	--->	crea documento
+cat vacio.txt	--->	ver lo que hay en el documento
+history	--->	historial de comandos
+!#	--->	permite repetir comando dependiendo el cual tenga asignado en el historial
+rm vacio.txt	--->	borrar documento
+clear	--->	limpiar
+
+-------------------- git --------------------------------------------
+git init	--->	crea carpeta donde se guarda el registro de cambios y crea un espacio en RAM llamado staging
+git status	--->	Untracked files: no se agregado nada
+		Changes to be committed: hay cambios para enviar pero no se han enviado
+git add vacio.txt	--->	envia tu archivo a staging donde se guardara temporalmente entes de ser enviado al repositorio
+git rm --cached vacio.txt	--->	borra el add del archivo para no enviar al repositorio
+git commit -m "Este es el primer commit de este archivo"	-->	lo envia al repositorio
+

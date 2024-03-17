@@ -27,6 +27,9 @@ git log vacio.txt	--->	ver los commits
 git diff (commit antiguo) (Commit viejo)	-->	ver diferencias de los documentos
 git show vacio.txt	--->	ver los cambios que se hizo
 git reset (commit antiguo) --hard	-->	regresa cambios del comit señalados "peligro borra antiguos commit"
+git checkout (primer commit) (archivo)	-->	tranforma archivo actual master en el commit que desea ver
+git checkout master (archivo)	--> trae el archivo actual de la rama master
+
 
 
 

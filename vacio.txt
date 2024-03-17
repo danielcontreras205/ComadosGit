@@ -24,6 +24,9 @@ git add vacio.txt	--->	envia tu archivo a staging donde se guardara temporalment
 git rm --cached vacio.txt	--->	borra el add del archivo para no enviar al repositorio
 git commit -m "Este es el primer commit de este archivo"	-->	lo envia al repositorio
 git log vacio.txt	--->	ver los commits 
+git log -p Historia.txt	-->	ver los detalles que se cambiaron
+git log --pretty=format:"%cn hizo un commit %h el dia %cd%nMensaje: %s"	-->	mensaje personalizado
+git shortlog	-->	ver los mensajes de los commits
 git diff (commit antiguo) (Commit viejo)	-->	ver diferencias de los documentos
 git show vacio.txt	--->	ver los cambios que se hizo
 git reset (commit antiguo) --hard	-->	regresa cambios del comit señalados "peligro borra antiguos commit"

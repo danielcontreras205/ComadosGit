@@ -49,6 +49,8 @@ ssh-add ~/.ssh/id_rsa	-->	agrega llave
 git remote add otigin (URL HTTPS)	-->	se enlaza nuestro proyecto con el repositorio en la nueva
 git pull origin main	-->	descargar cambios de la nuve
 git push origin main	-->	enviar cambios a la nuve
+git log --all --graph --decorate --oneline	-->	ver historial
+alias arbolito="git log --all --graph --decorate -->	oneline"	se crar alias
 
 
 

@@ -36,6 +36,7 @@ git branch cabecera	-->	crea nueva rama
 
 ----------------- ramas ----------------------------------
 git checkout cabecera	-->	cambia de rama
+git merge cabecera -m "se hace merge de cabecera"	-->	se une la informacion de la rama (para hacer el merge estar ubicado en la rama a la cual se le va a pasar lo de la otra rama: rama principal y traer de la rama secundaria)
 
 
 

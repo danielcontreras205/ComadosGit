@@ -63,7 +63,7 @@ gitk	-->	historia visual
 ------------ cambiar nombre a rama -----------------------
 git checkout cabecera	-->	Asegúrate de estar en la rama local 'cabecera'
 git branch -m pruebas	-->	Renombra la rama local 'cabecera' a 'pruebas'
-git push origin	-->	cabecera pruebas Si la rama 'cabecera' ya existe en el repositorio remoto y deseas actualizar el nombre en el repositorio remoto, utiliza el siguiente comando
+git push origin	(nombre de la rama)-->	carga rama al Github
 
 
 

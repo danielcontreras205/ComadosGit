@@ -33,19 +33,17 @@ git reset (commit antiguo) --hard	-->	regresa cambios del comit señalados "peli
 git checkout (primer commit) (archivo)	-->	tranforma archivo actual master en el commit que desea ver
 git checkout master (archivo)	--> trae el archivo actual de la rama master
 git branch cabecera	-->	crea nueva rama
-
+git branch	-->	ver ramas
 ----------------- ramas ----------------------------------
 git checkout cabecera	-->	cambia de rama
 git merge cabecera -m "se hace merge de cabecera"	-->	se une la informacion de la rama (para hacer el merge estar ubicado en la rama a la cual se le va a pasar lo de la otra rama: rama principal y traer de la rama secundaria)
-
 --------------------- crea llave publicay privada ----------
 ssh-keygen -t rsa -b 4096 -C "danielcontreras205@gmail.com"
 eval $(ssh-agent -s)	-->	ver si esta activa
 --------------------- agregar llave ------------------------
 cd ~	-->	Ubicarce en la raiz
 ssh-add ~/.ssh/id_rsa	-->	agrega llave
-
--------------------GitHup ----------------------------
+-------------------Github ----------------------------
 git remote add otigin (URL HTTPS)	-->	se enlaza nuestro proyecto con el repositorio en la nueva
 git pull origin main	-->	descargar cambios de la nuve
 git push origin main	-->	enviar cambios a la nuve
@@ -53,6 +51,11 @@ git log --all --graph --decorate --oneline	-->	ver historial
 alias arbolito="git log --all --graph --decorate --oneline"	-->	se crar alias
 ---------------- crear tag ---------------------------
 git tag -a v0.1 -m "primera vercion" (numero del commit)	-->	crear tag
+git tag	-->	ver tags
+git show-ref --tags	-->	ver tags con el numero del coomit
+git push origin main --tags	-->	enviar tags a Github
+git tag -d (nombre del tag)	-->	eliminar tag
+git push origin :refs/tags/(nombre del tag)	-->	eliminar tag
 
 
 

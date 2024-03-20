@@ -1,0 +1,69 @@
+ls -al 	--->	muestra todo con documentos ocultos
+ls -l  	--->	muestra documentos
+ls -a  	--->	muestra documentos ocultos
+cd /c  	--->	ir a disco C
+cd   	--->	ir a home (Change directory)
+pwd  	--->	Carpeta Actual
+dir  	--->	lista documentos resumido
+cd ../	--->	sale una carpeta atras
+mkdir Git	--->	crea carpeta
+cd Git/	--->	entra a carpeta
+touch vacio.txt	--->	crea documento
+cat vacio.txt	--->	ver lo que hay en el documento
+history	--->	historial de comandos
+!#	--->	permite repetir comando dependiendo el cual tenga asignado en el historial
+rm vacio.txt	--->	borrar documento
+clear	--->	limpiar
+
+-------------------- git --------------------------------------------
+git init	--->	crea carpeta donde se guarda el registro de cambios y crea un espacio en RAM llamado staging
+git status	--->	Untracked files: no se agregado nada
+		Changes to be committed: hay cambios para enviar pero no se han enviado
+git add .	--->	se agrega todo de la carpeta
+git add vacio.txt	--->	envia tu archivo a staging donde se guardara temporalmente entes de ser enviado al repositorio
+git rm --cached vacio.txt	--->	borra el add del archivo para no enviar al repositorio
+git commit -m "Este es el primer commit de este archivo"	-->	lo envia al repositorio
+git log vacio.txt	--->	ver los commits 
+git log -p Historia.txt	-->	ver los detalles que se cambiaron
+git log --pretty=format:"%cn hizo un commit %h el dia %cd%nMensaje: %s"	-->	mensaje personalizado
+git shortlog	-->	ver los mensajes de los commits
+git diff (commit antiguo) (Commit viejo)	-->	ver diferencias de los documentos
+git show vacio.txt	--->	ver los cambios que se hizo
+git reset (commit antiguo) --hard	-->	regresa cambios del comit señalados "peligro borra antiguos commit"
+git checkout (primer commit) (archivo)	-->	tranforma archivo actual master en el commit que desea ver
+git checkout master (archivo)	--> trae el archivo actual de la rama master
+git branch cabecera	-->	crea nueva rama
+git branch	-->	ver ramas
+----------------- ramas ----------------------------------
+git checkout cabecera	-->	cambia de rama
+git merge cabecera -m "se hace merge de cabecera"	-->	se une la informacion de la rama (para hacer el merge estar ubicado en la rama a la cual se le va a pasar lo de la otra rama: rama principal y traer de la rama secundaria)
+--------------------- crea llave publicay privada ----------
+ssh-keygen -t rsa -b 4096 -C "danielcontreras205@gmail.com"
+eval $(ssh-agent -s)	-->	ver si esta activa
+--------------------- agregar llave ------------------------
+cd ~	-->	Ubicarce en la raiz
+ssh-add ~/.ssh/id_rsa	-->	agrega llave
+-------------------Github ----------------------------
+git remote add otigin (URL HTTPS)	-->	se enlaza nuestro proyecto con el repositorio en la nueva
+git pull origin main	-->	descargar cambios de la nuve
+git push origin main	-->	enviar cambios a la nuve
+git log --all --graph --decorate --oneline	-->	ver historial
+alias arbolito="git log --all --graph --decorate --oneline"	-->	se crar alias
+---------------- crear tag ---------------------------
+git tag -a v0.1 -m "primera vercion" (numero del commit)	-->	crear tag
+git tag	-->	ver tags
+git show-ref --tags	-->	ver tags con el numero del coomit
+git push origin main --tags	-->	enviar tags a Github
+git tag -d (nombre del tag)	-->	eliminar tag
+git push origin :refs/tags/(nombre del tag)	-->	eliminar tag
+------------------- historial de ramas -------------------
+git show-branch	-->	ver historial de las ramas
+git show-branch --all --> ver historial de las ramas mas completa
+gitk	-->	historia visual
+------------ cambiar nombre a rama -----------------------
+git checkout cabecera	-->	Asegúrate de estar en la rama local 'cabecera'
+git branch -m pruebas	-->	Renombra la rama local 'cabecera' a 'pruebas'
+git push origin	-->	cabecera pruebas Si la rama 'cabecera' ya existe en el repositorio remoto y deseas actualizar el nombre en el repositorio remoto, utiliza el siguiente comando
+
+
+

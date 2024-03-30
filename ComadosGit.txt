@@ -1,3 +1,4 @@
+----------------------- Genral ----------------------------------------
 ls -al 	--->	muestra todo con documentos ocultos
 ls -l  	--->	muestra documentos
 ls -a  	--->	muestra documentos ocultos
@@ -15,7 +16,7 @@ history	--->	historial de comandos
 rm vacio.txt	--->	borrar documento
 clear	--->	limpiar
 
--------------------- git --------------------------------------------
+-------------------- git local --------------------------------------------
 git init	--->	crea carpeta donde se guarda el registro de cambios y crea un espacio en RAM llamado staging
 git status	--->	Untracked files: no se agregado nada
 		Changes to be committed: hay cambios para enviar pero no se han enviado
@@ -39,10 +40,10 @@ git checkout cabecera	-->	cambia de rama
 git merge cabecera -m "se hace merge de cabecera"	-->	se une la informacion de la rama (para hacer el merge estar ubicado en la rama a la cual se le va a pasar lo de la otra rama: rama principal y traer de la rama secundaria)
 git checkout cabecera	-->	Asegúrate de estar en la rama local 'cabecera'
 git branch -m pruebas	-->	Renombra la rama local 'cabecera' a 'pruebas'
-git push origin	(nombre de la rama)-->	carga rama al Github
+git push origin (nombre de la rama)	-->	carga rama al Github
 ------------------- historial de ramas -------------------
 git show-branch	-->	ver historial de las ramas
-git show-branch --all --> ver historial de las ramas mas completa
+git show-branch --all	-->	ver historial de las ramas mas completa
 gitk	-->	historia visual
 --------------------- crea llave publicay privada ----------
 ssh-keygen -t rsa -b 4096 -C "danielcontreras205@gmail.com"

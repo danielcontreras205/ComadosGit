@@ -1,0 +1,676 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Comandos Git</title>
+        <link rel="stylesheet" href="assent/styles.css" />
+    </head>
+    <body>
+        <h1>Comandos Git</h1>
+        <input type="text" id="filterInput" onkeyup="applyFilter()" placeholder="Filtrar...">
+        <select id="columnFilter">
+            <option value="1" selected>Tipo</option>
+            <option value="2">Comando</option>
+            <option value="3">Notas</option>
+        </select>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Comando</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>ls -al</p>
+                    </td>
+                    <td>
+                        <p>muestra todo con documentos ocultos</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>ls -l&nbsp;</p>
+                    </td>
+                    <td>
+                        <p>muestra documentos</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>ls -a&nbsp;</p>
+                    </td>
+                    <td>
+                        <p>muestra documentos ocultos</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>cd /c&nbsp;</p>
+                    </td>
+                    <td>
+                        <p>ir a disco C</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>cd&nbsp;&nbsp;</p>
+                    </td>
+                    <td>
+                        <p>ir a home (Change directory)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>pwd&nbsp;</p>
+                    </td>
+                    <td>
+                        <p>Carpeta Actual</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>dir&nbsp;</p>
+                    </td>
+                    <td>
+                        <p>lista documentos resumido</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>cd ../</p>
+                    </td>
+                    <td>
+                        <p>sale una carpeta atras</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>mkdir Git</p>
+                    </td>
+                    <td>
+                        <p>crea carpeta</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>cd Git/</p>
+                    </td>
+                    <td>
+                        <p>entra a carpeta</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>touch vacio.txt</p>
+                    </td>
+                    <td>
+                        <p>crea documento</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>cat vacio.txt</p>
+                    </td>
+                    <td>
+                        <p>ver lo que hay en el documento</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>history</p>
+                    </td>
+                    <td>
+                        <p>historial de comandos</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>!#</p>
+                    </td>
+                    <td>
+                        <p>
+                            permite repetir comando dependiendo el cual tenga asignado en el
+                            historial
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>rm vacio.txt</p>
+                    </td>
+                    <td>
+                        <p>borrar documento</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Genral</p>
+                    </td>
+                    <td>
+                        <p>clear</p>
+                    </td>
+                    <td>
+                        <p>limpiar</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git init</p>
+                    </td>
+                    <td>
+                        <p>
+                            crea carpeta donde se guarda el registro de cambios y crea un
+                            espacio en RAM llamado staging
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git status</p>
+                    </td>
+                    <td>
+                        <p>
+                            Untracked files: no se agregado nada 
+                            Changes to be committed: hay cambios para enviar pero no se han enviado
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git add .</p>
+                    </td>
+                    <td>
+                        <p>se agrega todo de la carpeta</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git add vacio.txt</p>
+                    </td>
+                    <td>
+                        <p>
+                            envia tu archivo a staging donde se guardara temporalmente entes
+                            de ser enviado al repositorio
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git rm --cached vacio.txt</p>
+                    </td>
+                    <td>
+                        <p>borra el add del archivo para no enviar al repositorio</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git commit -m "Este es el primer commit de este archivo"</p>
+                    </td>
+                    <td>
+                        <p>lo envia al repositorio</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git log vacio.txt</p>
+                    </td>
+                    <td>
+                        <p>ver los commits</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git log -p Historia.txt</p>
+                    </td>
+                    <td>
+                        <p>ver los detalles que se cambiaron</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>
+                            git log --pretty=format:"%cn hizo un commit %h el dia
+                            %cd%nMensaje: %s"
+                        </p>
+                    </td>
+                    <td>
+                        <p>mensaje personalizado</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git shortlog</p>
+                    </td>
+                    <td>
+                        <p>ver los mensajes de los commits</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git diff (commit antiguo) (Commit viejo)</p>
+                    </td>
+                    <td>
+                        <p>ver diferencias de los documentos</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git show vacio.txt</p>
+                    </td>
+                    <td>
+                        <p>ver los cambios que se hizo</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git reset (commit antiguo) --hard</p>
+                    </td>
+                    <td>
+                        <p>
+                            regresa cambios del comit se&ntilde;alados "peligro borra antiguos
+                            commit"
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git checkout (primer commit) (archivo)</p>
+                    </td>
+                    <td>
+                        <p>tranforma archivo actual master en el commit que desea ver</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git checkout master (archivo)</p>
+                    </td>
+                    <td>
+                        <p>trae el archivo actual de la rama master</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git branch cabecera</p>
+                    </td>
+                    <td>
+                        <p>crea nueva rama</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Git Local</p>
+                    </td>
+                    <td>
+                        <p>git branch</p>
+                    </td>
+                    <td>
+                        <p>ver ramas</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ramas</p>
+                    </td>
+                    <td>
+                        <p>git checkout cabecera</p>
+                    </td>
+                    <td>
+                        <p>cambia de rama</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ramas</p>
+                    </td>
+                    <td>
+                        <p>git merge cabecera -m "se hace merge de cabecera"</p>
+                    </td>
+                    <td>
+                        <p>
+                            se une la informacion de la rama (para hacer el merge estar
+                            ubicado en la rama a la cual se le va a pasar lo de la otra rama:
+                            rama principal y traer de la rama secundaria)
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ramas</p>
+                    </td>
+                    <td>
+                        <p>git checkout cabecera</p>
+                    </td>
+                    <td>
+                        <p>Aseg&uacute;rate de estar en la rama local 'cabecera'</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ramas</p>
+                    </td>
+                    <td>
+                        <p>git branch -m pruebas</p>
+                    </td>
+                    <td>
+                        <p>Renombra la rama local 'cabecera' a 'pruebas'</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ramas</p>
+                    </td>
+                    <td>
+                        <p>git push origin (nombre de la rama)</p>
+                    </td>
+                    <td>
+                        <p>carga rama al Github</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Historia Ramas</p>
+                    </td>
+                    <td>
+                        <p>git show-branch</p>
+                    </td>
+                    <td>
+                        <p>ver historial de las ramas</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Historia Ramas</p>
+                    </td>
+                    <td>
+                        <p>git show-branch --all</p>
+                    </td>
+                    <td>
+                        <p>ver historial de las ramas mas completa</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Historia Ramas</p>
+                    </td>
+                    <td>
+                        <p>gitk</p>
+                    </td>
+                    <td>
+                        <p>historia visual</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>llaves GitHub</p>
+                    </td>
+                    <td>
+                        <p>ssh-keygen -t rsa -b 4096 -C "Correo"</p>
+                    </td>
+                    <td>
+                        <p>Crear llave publica y privada</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>llaves GitHub</p>
+                    </td>
+                    <td>
+                        <p>eval $(ssh-agent -s)</p>
+                    </td>
+                    <td>
+                        <p>ver si esta activa</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>llaves GitHub</p>
+                    </td>
+                    <td>
+                        <p>cd ~</p>
+                    </td>
+                    <td>
+                        <p>Ubicarce en la raiz</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>llaves GitHub</p>
+                    </td>
+                    <td>
+                        <p>ssh-add ~/.ssh/id_rsa</p>
+                    </td>
+                    <td>
+                        <p>agrega llave</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GitHub</p>
+                    </td>
+                    <td>
+                        <p>git remote add otigin (URL HTTPS)</p>
+                    </td>
+                    <td>
+                        <p>se enlaza nuestro proyecto con el repositorio en la nueva</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GitHub</p>
+                    </td>
+                    <td>
+                        <p>git pull origin main</p>
+                    </td>
+                    <td>
+                        <p>descargar cambios de la nuve</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GitHub</p>
+                    </td>
+                    <td>
+                        <p>git push origin main</p>
+                    </td>
+                    <td>
+                        <p>enviar cambios a la nuve</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GitHub</p>
+                    </td>
+                    <td>
+                        <p>git log --all --graph --decorate --oneline</p>
+                    </td>
+                    <td>
+                        <p>ver historial</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GitHub</p>
+                    </td>
+                    <td>
+                        <p>alias arbolito="git log --all --graph --decorate --oneline"</p>
+                    </td>
+                    <td>
+                        <p>se crar alias</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Tag's</p>
+                    </td>
+                    <td>
+                        <p>git tag -a v0.1 -m "primera vercion" (numero del commit)</p>
+                    </td>
+                    <td>
+                        <p>crear tag</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Tag's</p>
+                    </td>
+                    <td>
+                        <p>git tag</p>
+                    </td>
+                    <td>
+                        <p>ver tags</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Tag's</p>
+                    </td>
+                    <td>
+                        <p>git show-ref --tags</p>
+                    </td>
+                    <td>
+                        <p>ver tags con el numero del coomit</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Tag's</p>
+                    </td>
+                    <td>
+                        <p>git push origin main --tags</p>
+                    </td>
+                    <td>
+                        <p>enviar tags a Github</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Tag's</p>
+                    </td>
+                    <td>
+                        <p>git tag -d (nombre del tag)</p>
+                    </td>
+                    <td>
+                        <p>eliminar tag</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Tag's</p>
+                    </td>
+                    <td>
+                        <p>git push origin :refs/tags/(nombre del tag)</p>
+                    </td>
+                    <td>
+                        <p>eliminar tag</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Div Botones Paginacion-->
+        <div class="pagination" id="pagination"></div>
+        <!-- Cantidad de informacion -->
+        <select id="recordsSelect" class="records-select" onchange="changeRowsPerPage()">
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <script src="assent/script.js"></script>
+    </body>
+</html>
